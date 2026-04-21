@@ -1,7 +1,7 @@
 cask "grpc-nimbus" do
-  version "2026.16.0"
-  sha256 arm:   "76cb6f2fbb13843faec43ce832518e1e7b55f5f4e347c5e2f3c2e2d2914cc883",
-         intel: "6f7d1c7368add79104cb491e1390c4db3c08080d1ef48934e80bcfbd221b31a7"
+  version "2026.17.0"
+  sha256 arm:   "e7b8b52132f63f52e32563886404bde01b3ba245f202ee7ed638a8a86ba6a5ba",
+         intel: "0a427a56f418f542bf7ac3b564623975fea0a818d8c13b0588951b2794778d46"
 
   url "https://github.com/CosmicMunkey/grpc-nimbus/releases/download/v#{version}/grpc-nimbus-v#{version}-darwin-#{arch}.zip",
       verified: "github.com/CosmicMunkey/grpc-nimbus/"
