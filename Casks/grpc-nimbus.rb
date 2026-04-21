@@ -19,6 +19,11 @@ cask "grpc-nimbus" do
 
   app "GRPC Nimbus.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+      args: ["-dr", "com.apple.quarantine", "#{appdir}/GRPC Nimbus.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/grpc-nimbus",
     "~/Library/Preferences/grpc-nimbus.plist",
