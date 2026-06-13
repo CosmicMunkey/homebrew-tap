@@ -1,16 +1,16 @@
 cask "grpc-nimbus" do
-  version "1.3.1"
+  version "1.3.2"
 
   on_arm do
     url "https://github.com/CosmicMunkey/grpc-nimbus/releases/download/v#{version}/grpc-nimbus-v#{version}-darwin-arm64.zip",
         verified: "github.com/CosmicMunkey/grpc-nimbus/"
-    sha256 "99d3ec94bfc1962876bc3b3ae6bd79de8b56116af8aab3ca448ee82a75cbad6d"  # arm64
+    sha256 "b5b04b937e8498b4040a86eb39cee8abd660c2076e6da4619e2be262b092246a"  # arm64
   end
 
   on_intel do
     url "https://github.com/CosmicMunkey/grpc-nimbus/releases/download/v#{version}/grpc-nimbus-v#{version}-darwin-x86_64.zip",
         verified: "github.com/CosmicMunkey/grpc-nimbus/"
-    sha256 "9057268bfef7bae03f8a79410de942d068ed64673598ed57c04b1f8a6413ad20"  # x86_64
+    sha256 "907a28fddf7e7668bb9ea8ab4bf5fe6d7fd8dc4f8d355b560744961f8fee460b"  # x86_64
   end
 
   name "GRPC Nimbus"
